@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Vokabeltrainer</title>
+        <link rel="stylesheet" href="js4.css">
+    </head>
+<body>
+    <a href="startseite.html">Vokabeltrainer</a>
+    <h3 class="Vokabel">Hallo</h3>
+    <center>
+    <textarea id="textarea" onClick="this.value=''">Vokabel eingeben</textarea>
+    <div>
+    <button type="submit" onclick="getTextareaValue()">Überprüfen</button>
+    </center>
+    <div class="popup" id="popup">
+        <img src="haken.jpeg">
+        <h2>Richtig!</h2>
+        <button type="button" onclick="nächsteVokabel()">Weiter</button>
+    </div>
+    </div>
+        <div class="popup2" id="popup2">
+            <img src="Kreuz.png">
+            <h2>Leider Falsch, probiere es noch einmal.</h2>
+            <button type="button" onclick="zurueck()">Noch einmal</button>
+        </div>
+    <script src="vokabeltrainer.js"></script>
+</body>
+</html>

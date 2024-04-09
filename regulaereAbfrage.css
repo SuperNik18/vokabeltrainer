@@ -1,0 +1,262 @@
+a{
+    text-decoration: none;
+    font-size: 40px;
+    color: orange;
+    font-family: "Comic Sans MS", "Comic Sans";
+    display: flex;
+    justify-content: left;
+}
+a:hover{
+    color: rgba(250, 175, 35, 0.87);
+}
+.container {
+    position: relative; /* Positionierung relativ für die absolut positionierten Balken */
+    width: 90%; /* Breite des Containers */
+    height: 20px; /* Höhe des Containers */
+}
+.balken-grau{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 90%; /* Breite des Balkens */
+    height: 20px; /* Höhe des Balkens */
+    border-radius: 10px;
+    background-color: grey; /* Farbe des Balkens */
+}
+.balken-orange {
+    position: absolute; /* Absolut positioniert */
+    top: 80px; /* Oben ausrichten */
+    left: 0; /* Rechts ausrichten */
+    width: 0; /* Breite des orangen Balkens */
+    height: 20px; /* Höhe des orangen Balkens */
+    border-radius: 10px;
+    background-color: orange; /* Farbe des orangen Balkens */
+    transition: width 0.5s;
+}
+.zahl_anzeige{
+    font-family: "Comic Sans MS", "Comic Sans";
+    display: flex;
+    justify-content: right;
+    margin-top: 15px;
+}
+.Vokabel{
+    margin-top: 250px;
+    color: black;
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.textfeld{
+    margin-top: 170px;
+    background-color: lightgrey;
+    border: 0;
+    height: 40px;
+    width:  90%;
+    font-size: 20px;
+    font-family: "Comic Sans MS", "Comic Sans";
+    border-radius: 10px;
+}
+button{
+    margin-top: 5px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 300px;
+    padding: 10px 0;
+    font-size:  18px;
+    border-radius: 30px;
+
+}
+button:hover{
+    background-color: rgba(253, 182, 51, 0.938);
+}
+.fuegeZeichenein{
+    margin-top: 5px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 50px;
+    padding: 10px 0;
+    font-size:  18px;
+    border-radius: 10px;
+}
+.richtigesWort{
+    margin-top: 0;
+    font-size: 20px;
+    font-family: "Comic Sans MS", "Comic Sans";
+    color: black;
+}
+h3{
+    font-size: 20px;
+    font-family: "Comic Sans MS", "Comic Sans";
+    color: black;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    box-shadow: 0px 4px 13px -2px rgba(0,0,0,0.89);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+.popup button{
+    width: 90%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: orange;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup button:hover{
+    background-color: rgba(250, 179, 49, 0.89);
+}
+.popup2 button{
+    width: 90%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: rgb(161, 161, 161);
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup2 button:hover{
+    background-color: rgba(192, 191, 191, 0.705);;
+}
+.popup2 .button2{
+    width: 90%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: orange;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup2 .button2:hover{
+    background-color: rgba(253, 179, 42, 0.925);
+}
+.popup2{
+    width: 400px;
+    background: #fff;
+    box-shadow: 0px 4px 13px -2px rgba(0,0,0,0.89);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup2{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+
+}
+.popup2 img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup2 h2{
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color: red;
+}
+.popup3 button{
+    width: 90%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background:greenyellow;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup3 button:hover{
+    background-color: rgba(184, 250, 85, 0.911);
+}
+.popup3{
+    width: 400px;
+    background: #fff;
+    box-shadow: 0px 4px 13px -2px rgba(0,0,0,0.89);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup3{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+
+}
+.popup3 img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup3 h2{
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color: green;
+}

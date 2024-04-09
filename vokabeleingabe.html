@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vokabeltrainer</title>
+<link rel="stylesheet" href="vokabeleingabe.css">
+</head>
+<body>
+<div class="container">
+  <h2>Vokabeleingabe</h2>
+  <label for="deutsch">Deutsch:</label>
+  <input type="text" id="deutsch" placeholder="Deutsches Wort" required><br>
+  <label for="uebersetzung">Übersetzung:</label>
+  <input type="text" id="uebersetzung" placeholder="Übersetzung" required>
+  <button class="button" onclick="addVokabel()">Hinzufügen</button>
+  <div id="vokabelListe"></div>
+  <a href="startseite.html"><button>Zurück</button></a>
+</div>
+<script src="vokabeleingabe.js"></script>
+</body>
+</html>

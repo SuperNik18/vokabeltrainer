@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vokabelabfrage</title>
+<link rel="stylesheet" href="regulaereAbfrage.css">
+</head>
+<body>
+    <a href="startseite.html">Vokabeltrainer</a>
+    <div class="progress-container">
+        <div class="progress-bar-container">
+          <div class="balken-grau"></div>
+          <div class="balken-orange"></div>
+        </div>
+      </div>
+      <div class="zahl_anzeige" id="progress">0/0</div>
+<div id="question">
+  <span class="Vokabel" id="spanisch"></span> 
+  <center>
+    <input class="textfeld" type="text" id="antwort" placeholder="Hier Übersetzung eingeben:"><br>
+    <button class="fuegeZeichenein" onclick="fuegeZeichenEinN()">ñ</button><br>
+  <button onclick="pruefen()">Prüfen</button>
+</center>
+</div>
+
+<div class="popup" id="popup">
+    <img src="haken.jpeg">
+    <h2>Richtig!</h2>
+    <button type="button" onclick="naechsteFrage()" onclick="zeigeFrage()">Weiter</button>
+</div>
+</div>
+    <div class="popup2" id="popup2">
+        <img src="Kreuz.png">
+        <h2>Leider Falsch, probiere es noch einmal.</h2>
+        <h3>Das richtige Wort wäre:</h3><div class="richtigesWort" id="spanischAnzeige"></div>
+        <button class="button2" onclick="geltenlassen()">Gelten lassen</button>
+        <button type="button" onclick="zurueck()">Noch einmal</button>
+    </div>
+    <div class="popup3" id="popup3">
+        <img src="SmileyDaumenhoch.jpg">
+        <h2>Super, du hast alles gelernt</h2>
+        <a href="statistiken.html" onclick="aktualisiereStatistik2WurdeAufgerufen()"><button type="button" onclick="Statistiken()">OK</button></a>
+    </div>
+    <script src="regulaereAbfrage.js"></script>
+</body>
